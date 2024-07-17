@@ -10,4 +10,6 @@
 
 # possible solutions: 
     # place images into an array/stack or something, and process data after.
+    # utilize an async module in python (asyncio) and push the tesseracts to the side.
+        # depends if we want to analyze while running or analyze after running.
     # record data every 5 or so seconds instead
