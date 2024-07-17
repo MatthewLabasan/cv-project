@@ -1,2 +1,10 @@
 opencv-python==4.10.0.84
 pytesseract==0.3.10
+
+pillow==10.4.0
+opencv-contrib-python==4.10.0.84
+screeninfo==0.8.1
+
+easyocr==1.7.1
+keras-ocr==0.9.3
+tensorflow==2.17.0
