@@ -16,7 +16,7 @@ screen_size = (width, height)
 
 # video encoding
 fourcc = cv2.VideoWriter_fourcc(*'mp4v') # choose a video type. * unpacks string into separate char args
-captured_video = cv2.VideoWriter("recorded_video.mp4", fourcc, 1.0, screen_size, True) # title of video, format, fps, width and height of screen, color
+captured_video = cv2.VideoWriter("./screen_recordings/recorded_video.mp4", fourcc, 1.0, screen_size, True) # title of video, format, fps, width and height of screen, color
 
 while True:
     # modify last two numbers to simplify where the gui is captured
