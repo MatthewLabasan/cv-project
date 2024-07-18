@@ -4,6 +4,9 @@ pytesseract==0.3.10
 pillow==10.4.0
 opencv-contrib-python==4.10.0.84
 screeninfo==0.8.1
+rapidfuzz==3.9.4
+pandas==2.8.2
+numpy==1.24.3
 
 easyocr==1.7.1
 keras-ocr==0.9.3
