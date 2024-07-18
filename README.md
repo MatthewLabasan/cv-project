@@ -1,10 +1,8 @@
-# cv-project
-## Outline
-1. Overview: capture feed (image / video) with OpenCV
-2. Convert frames to data/information with Tesseract & PyTesseract
-3. Output visual feedback (text) and store data
+# Introduction
+This project was developed to automate data recording recieved by the ARL WAM-V's Operator Control Unit (OCU) GUI. The OCU does not allow exporting or reviewing recieved data, hence the need to scrape it from the screen using computer vision! This program can also act as a standalone screen recorder and screen scraper, and will output both a video and txt file.
 
-# Installation and Use
+# Getting Started
+## Installation
 Python 3.6 or later and pip required.
 1. Install tesseract using your device's dependency manager (brew, etc) or manually install.
     - After installation:
@@ -23,3 +21,10 @@ Python 3.6 or later and pip required.
 6. Press the escape key to exit the program. A CSV file and video recording should now be saved in the data_recordings and screen_recordings folder.
 7. Deactivate the virtual environment by running `deactivate` 
 8. For future use, utilize the same virtual envionment unless your dependencies are installed to your system. In that case, just run `main.py`.
+## Modifications
+- You can modify the video's fps by changing the cv2.waitKey, though this will cause performance issues. 
+- Screen size can be modified by changing the height and width in the `ImageGrab.grab()` function.
+
+# Future Work
+- Categorize OCR data by relative coordinates to ensure scalability and standardized data collection (begun implementation in `alternative_processing,py`)
+- Implement of CSV file creation 
