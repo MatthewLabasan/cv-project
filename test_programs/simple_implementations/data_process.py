@@ -32,11 +32,22 @@ for index, data_array in enumerate(data.splitlines()): # iterate through data. e
 # to make easier to write data to csv
     # could sort array of arrays to be in chunks of arrays. ex. one array is 200-210 y value.
     # this takes up extra space, but we just parse through it once o(n), though, we can't guarentee the y-axis size difference.
-    # we need to be able to compare the KEY word's y value with y values outside.
-    # maybe in line 26, check each if KEY word is inside a dictionary of predefined values. if is the value, grab key (y) and store, else if it is similar (can use sequence manager (O(n*m), so kinda slow but might be fine for this since its only a couple thousand comparisons with SHORT strings), then replace with the actual key and grab the value.
+    # we need to be able to compare the key word's y value with y values outside.
+    # maybe in line 26, check each if the resulting word is inside an array of predefined values (the headers). if is of good similarity, push y as key and store value (header word) in a new dictionary. (can use sequence manager (O(n*m), so kinda slow but might be fine for this since its only a couple thousand comparisons with SHORT strings OR use fuzzywuzzy ratio), else move on.
         # https://datascience.stackexchange.com/questions/20536/how-to-improve-ocr-scanning-results
-    # go through each one again, checking for similar y values using math.isclose
+        # try to implement early stopping to prevent useless iteration
+        # when creating the y value key dictionary, need to create multiple keys (maybe +-2 or 3) that work (increases space usage, but fast indexing and easy implementation) OR
+            # once y value key dictionary is created, get keys. when going through each one again, look for similar keys (y values) using the getkeys array. if it is within a certain similarity thershold, access that specific key's value (header) and push data to that header.
+                # this might be slower as we are running functions on things that might not even be remotely near a y value key. if we used what is above, we can just index for the key and if its not there, continue.
+            # OR we can use a isvalidkey function that loops through getkeys. hold onto that key, and compare to incoming y value. it is within +-5 pixels, return the header needed / take data and add it to that header.
+                # same as above alternative. does methods on things we don't need to do.
+    # go through each one again, checking for similar y values using math.isclose (or method above)
+    # -> will have iterated through array twice = o(n * (p*q) where p*q is small int numbers) + o(n + n * math.isclose run time) -> should be o(n)
     # if it is close, push data to that column, specifically matching the date value!!!
+
+    # improvements: in first run, remove
+
+# improved pseudocode
 
     # sort csv file at the end by date
 
