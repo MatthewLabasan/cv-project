@@ -37,7 +37,7 @@ while True:
     captured_video.write(cvt_img)
 
     # waits for 1s. if a key is pressed matching ascii 27 (esc key), loop breaks. otherwise, take next photo
-    key = cv2.waitKey(1000)
+    key = cv2.waitKey(1000) # returns ascii of key pressed or -1 if none
     if key == 27:
         break
 

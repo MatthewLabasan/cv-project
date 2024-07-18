@@ -38,3 +38,5 @@
 - As we screen record (most likely one image per second depending on program updates, need to ask Kai), pass the information into python_ocr and print it to a file.
 - Need to make python_ocr accept a param
 - One second should be long enough for the ocr to run through without too many image modifications. May need to figure out how to optimize.
+
+### Python Version 3.3 or later
