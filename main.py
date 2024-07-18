@@ -26,9 +26,16 @@ from screeninfo import get_monitors # works well on windows, not macOS
 async def python_ocr(img):
     # don't need line below as long as you set up a virtual env and reinstall requirements and tesseract. not sure how to do tesseract on windows yet!
     # use path to tesseract executable. to find this on mac: `which tesseract`. to find this on windows: `where tesseract``
-    
     pytesseract.pytesseract.tesseract_cmd = "/opt/homebrew/bin/tesseract"
     print("img: \n" + pytesseract.image_to_string(img) + "\n") 
+
+    # format of image_to_data (attributes of each data object)
+    # level	  page_num	  block_num	  par_num	line_num	word_num	left(x)	  top(y)  width	height	confidence	text
+    # would like to extract left [6] and top [7], and also record confidence for fun
+    data = pytesseract.image_to_data(img)
+
+    for index, data_array in enumerate(data.splitlines()): # iterate through data. enumerate returns a tuple of index and array of data
+        print("%s: x=%i, y=%i, confidence=%i word=%s" % (index, data_array[6], data_array[7], data_array[10], data_array[11]))
 
 async def capture():
     ocr_tasks = []
