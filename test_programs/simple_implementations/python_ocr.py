@@ -49,7 +49,12 @@ box1 = pytesseract.image_to_boxes(img1) # gives string with coordinate values & 
 box2 = pytesseract.image_to_boxes(img2)
 box3 = pytesseract.image_to_boxes(img3)
 
-data1 = pytesseract.image_to_data(img1)
+data1 = pytesseract.image_to_data(img2)
+print(data1)
+print("--------")
+print(data1.splitlines())
+print("--------")
+print(enumerate(data1.splitlines()))
 data2 = pytesseract.image_to_data(img2)
 data3 = pytesseract.image_to_data(img3)
 
