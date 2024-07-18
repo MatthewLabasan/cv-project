@@ -35,7 +35,10 @@ async def python_ocr(img):
     data = pytesseract.image_to_data(img)
 
     for index, data_array in enumerate(data.splitlines()): # iterate through data. enumerate returns a tuple of index and array of data
-        print("%s: x=%i, y=%i, confidence=%i word=%s" % (index, data_array[6], data_array[7], data_array[10], data_array[11]))
+        if index != 0: # ignore first object
+            data_array = data_array.split()
+        if len(data_array) == 12: # standard word array attribute length: verifies we parse a identified word
+            print(f"{index}: x={data_array[6]}, y={data_array[7]}, confidence={data_array[10]}, word={data_array[11]}")
 
 async def capture():
     ocr_tasks = []
