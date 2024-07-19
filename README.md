@@ -1,5 +1,5 @@
 # Introduction
-This project was developed to automate the recording of data recieved by the ARL WAM-V's Operator Control Unit (OCU) GUI. The OCU does not allow exporting or reviewing recieved data, hence the need to scrape it from the screen using OpenCV and PyTesseract (OCR). This program can also act as a standalone screen recorder and screen scraper, and will output a video and txt file.
+This project was developed to automate the recording of data recieved by the ARL WAM-V's Operator Control Unit (OCU) GUI. The OCU natively exports recieved data, though even with trouble shooting and customer service, ARL staff are unable to locate these files. Hence the need to scrape it from the screen using OpenCV and PyTesseract (OCR). This program can act as a standalone screen recorder and screen scraper, and will output a video and txt file.
 
 # Getting Started
 ## Prerequisites
