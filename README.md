@@ -95,7 +95,7 @@ __Creating a clean CSV file__ that included data scraped from each frame. How I 
         - Utilize numPy dataframe, and fill in the first row under the keyword with similar y-value
     - This worked for some data, though it seemed that some values were being overwritten or not recognized when printing the resulting data frame. There must be something wrong with my implementation, as words such as lon was recognized but lat was not.
 - Instead, I opted for a .txt file that appends the raw scraped data due to time constraints.
-### Installation Onsite
+### Onsite Installation
 It was difficult to install this as I had only tested installation from MacOS.
 - Making sure Tesseract was in path on Windows OS (had to go into settings rather than from terminal).
 - Starting a virtual environment (scripts were not allowed on the computer).
@@ -111,14 +111,14 @@ This was a super fun project that taught me a lot about essential computer visio
 ## Photos
 See some photos of us running into errors :weary: that we overcame :triumph: :muscle: :pray:, and the WAM-V and MiSos (mini sonars) that were being tested! 
 
-<img alt="@dangabrielle setting up!" src="assets/settingup.jpg" width="1008" height="756">
+<img alt="@dangabrielle setting up!" src="assets/settingup.jpg" width="1008" height="736">
 
 _@dangabrielle Setting up_
 
-<img alt="Some errors: no git?!? >_< + slow download speeds..." src="assets/errors.JPG" width="1008" height="756">
+<img alt="Some errors: no git?!? >_< + slow download speeds..." src="assets/errors.JPG" width="1008" height="736">
 
 _No git + slow download speeds = >_<_
-<img alt="The beach + our workstation" src="assets/site.jpg" width="1008" height="756">
+<img alt="The beach + our workstation" src="assets/site.jpg" width="1008" height="736">
 
 _The beach and workstation. Watching the WAM-V!_
 
