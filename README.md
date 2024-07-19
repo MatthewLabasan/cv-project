@@ -1,8 +1,8 @@
 # Table of Contents
 1. [Introduction](#introduction)
 2. [Getting Started](#getting-started)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
 3. [Program Use](#program-use)
    - [Running the Program](#running-the-program)
    - [Modifications](#modifications)
