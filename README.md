@@ -9,13 +9,8 @@
    - [Sample Results](#sample-results)
 4. [Project Notes](#project-notes)
    - [Difficulties Encountered](#difficulties-encountered)
-     - [Development](#development)
-     - [Installation Onsite](#installation-onsite)
    - [Reflection and Future Work](#reflection-and-future-work)
 5. [Photos](#photos)
-   - [@dangabrielle Setting up](#dangabrielle-setting-up)
-   - [No git + slow download speeds = >_<](#no-git--slow-download-speeds----)
-   - [The beach and workstation. Watching the WAM-V!](#the-beach-and-workstation-watching-the-wam-v)
 # Introduction
 This project was developed to automate the recording of data recieved by the ARL WAM-V's Operator Control Unit (OCU) GUI. The OCU natively exports recieved data, though even with trouble shooting and customer service, ARL staff are unable to locate these files. Hence the need to scrape it from the screen using OpenCV and PyTesseract (OCR). This program can act as a standalone screen recorder and screen scraper, and will output a video and txt file.
 
