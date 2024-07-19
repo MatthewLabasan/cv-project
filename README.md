@@ -1,9 +1,8 @@
-# ARL WAM-V Data Recording Automation: Using OpenCV and PyTesseract
 # Table of Contents
 1. [Introduction](#introduction)
 2. [Getting Started](#getting-started)
-   - [Prerequisites](#prerequisites)
-   - [Installation](#installation)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
 3. [Program Use](#program-use)
    - [Running the Program](#running-the-program)
    - [Modifications](#modifications)
@@ -24,7 +23,7 @@ This project was developed to automate the recording of data recieved by the ARL
 ## Prerequisites
 - [Python](https://www.python.org/) v3.8 through v3.11, [pip](https://pip.pypa.io/en/stable/installation/)
 - [Tesseract](https://tesseract-ocr.github.io/tessdoc/Installation.html)
-    1. Install tesseract using your device's dependency manager (brew, etc) or manually install.
+    - Install tesseract using your device's dependency manager (brew, etc) or manually install.
     - After installation, set ensure it is accessible in your Path:
         - On Windows, open your terminal, run `where tesseract`, copy the PATH, and set it as a PATH using `set PATH=%PATH%;C:\your\path\here\`
             - Alternatively, go to search your settings for System Properties -> Environmental Variables -> Select Path in System Variable -> Edit -> New -> Paste your path and confirm.
@@ -33,7 +32,7 @@ This project was developed to automate the recording of data recieved by the ARL
 ## Installation
 1. Clone the repository in your desired directory. 
     ```git clone https://github.com/MatthewLabasan/cv-project.git```
-2. Navigate to this directory and [OPTIONAL] create a Python virtual environment:
+2. Navigate to this directory and __[OPTIONAL]__ create a Python virtual environment:
     - Create your virtual environment: 
         ```python -m venv <your_env_name>```
     - Activate it using
@@ -70,31 +69,9 @@ This project was developed to automate the recording of data recieved by the ARL
     ```
 - __NOTE__: Using this function on some macOS devices will record in a lower resolution than what is possible. To ensure full quality, remove the parameters in the above line of code.
 ## Sample Results
+<img alt="Frame being read (left), Resulting text (right)" src="assets/outputsample.png" width="960" height="540">
 
-<div style="display: flex; align-items: flex-start;">
-  <div style="flex: 1; margin-right: 20px;">
-    <img src="test_images/desired.png" alt="Sample Frame" width="300">
-  </div>
-  <div style="flex: 1;">
-    =====05:33:56=====
-
-    Lat (deg) 21.311684 Lon (deg)-157.889518
-    Satellites 16 Uncertainty (m) 0.8
-
-    OCB Temp (C) 38.6 (Volts) 23.1
-    Ly Ly
-    Runtime (min) P 2916 S 2400
-    Charge (%) 84.0 83.0
-    Ee Es
-    Voltage (V) 32.1 31.8
-    Ee es
-    Current(A) 0.1 01
-    Power (W) 3.0 3.0
-    PCB Temp (C) 27.0 27.0
-
-    =====05:33:59=====
-  </div>
-</div>
+_Frame being read (left), Resulting text (right)_
 
 # Project Notes
 ## Difficulties Encountered
@@ -132,17 +109,18 @@ This was a super fun project that taught me a lot about essential computer visio
 - Improve OCR through image modifications, etc. so that everything needed from the GUI can be captured.
 - Capture time for each frame so that time of data is accurate.
 ## Photos
-See some photos of us running into errors :weary: that we overcame :triumph: :muscle: :pray:, and the WAM-V and MiSos (mini sonars) that were being tested!
-
-### @dangabrielle Setting up 
+See some photos of us running into errors :weary: that we overcame :triumph: :muscle: :pray:, and the WAM-V and MiSos (mini sonars) that were being tested! 
 
 <img alt="@dangabrielle setting up!" src="assets/settingup.jpg" width="1008" height="756">
 
-### No git + slow download speeds = >_< 
+_@dangabrielle Setting up_
+
 <img alt="Some errors: no git?!? >_< + slow download speeds..." src="assets/errors.JPG" width="1008" height="756">
 
-### The beach and workstation. Watching the WAM-V!
+_No git + slow download speeds = >_<_
 <img alt="The beach + our workstation" src="assets/site.jpg" width="1008" height="756">
+
+_The beach and workstation. Watching the WAM-V!_
 
  
 
