@@ -1,17 +1,35 @@
+# ARL WAM-V Data Recording Automation: Using OpenCV and PyTesseract
+# Table of Contents
+1. [Introduction](#introduction)
+2. [Getting Started](#getting-started)
+   - [Prerequisites](#prerequisites)
+   - [Installation](#installation)
+3. [Program Use](#program-use)
+   - [Running the Program](#running-the-program)
+   - [Modifications](#modifications)
+   - [Sample Results](#sample-results)
+4. [Project Notes](#project-notes)
+   - [Difficulties Encountered](#difficulties-encountered)
+     - [Development](#development)
+     - [Installation Onsite](#installation-onsite)
+   - [Reflection and Future Work](#reflection-and-future-work)
+5. [Photos](#photos)
+   - [@dangabrielle Setting up](#dangabrielle-setting-up)
+   - [No git + slow download speeds = >_<](#no-git--slow-download-speeds----)
+   - [The beach and workstation. Watching the WAM-V!](#the-beach-and-workstation-watching-the-wam-v)
 # Introduction
 This project was developed to automate the recording of data recieved by the ARL WAM-V's Operator Control Unit (OCU) GUI. The OCU natively exports recieved data, though even with trouble shooting and customer service, ARL staff are unable to locate these files. Hence the need to scrape it from the screen using OpenCV and PyTesseract (OCR). This program can act as a standalone screen recorder and screen scraper, and will output a video and txt file.
 
 # Getting Started
 ## Prerequisites
-- Python 3.8 - 3.11 and pip
-- Tesseract
+- [Python](https://www.python.org/) v3.8 through v3.11, [pip](https://pip.pypa.io/en/stable/installation/)
+- [Tesseract](https://tesseract-ocr.github.io/tessdoc/Installation.html)
     1. Install tesseract using your device's dependency manager (brew, etc) or manually install.
     - After installation, set ensure it is accessible in your Path:
         - On Windows, open your terminal, run `where tesseract`, copy the PATH, and set it as a PATH using `set PATH=%PATH%;C:\your\path\here\`
             - Alternatively, go to search your settings for System Properties -> Environmental Variables -> Select Path in System Variable -> Edit -> New -> Paste your path and confirm.
         - On MacOS / Linux, open your terminal, run `which tesseract`, copy the PATH, and set it as a PATH using `export PATH="$PATH:/path/to/your/directory"`
         - If your Path is set within the terminal, there are temporary changes to your path and will need to be done during every terminal session unless set permanently or handled by your global dependency manager.
-- git
 ## Installation
 1. Clone the repository in your desired directory. 
     ```git clone https://github.com/MatthewLabasan/cv-project.git```
