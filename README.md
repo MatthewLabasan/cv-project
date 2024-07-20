@@ -100,6 +100,8 @@ It was difficult to install this as I had only tested installation from MacOS.
 This was a super fun project that taught me a lot about essential computer vision libraries and how to use them. I also learned a lot about making data passing more efficient, and how I can manipulate data (although not done successfully) to create clean information. Some things I'd love to implement in the future include:
 - Categorize OCR data by relative coordinates to ensure scalability and standardized data collection (begun implementation in `alternative_processing,py`)
 - Implement CSV file creation
+- Test utilizing asyncio.gather to allow screen recorder and OCR processing to run at a true 1fps, and finish exporting some x time after escaping the screen recorder
+    - Currently, awaiting the OCR stalls video function, which can be seen by the time stamps of the completed .txt file appendage
 - Implement a simpler way to insert screen area to be recorded
 - Improve OCR through image modifications, etc. so that everything needed from the GUI can be captured.
 - Capture time for each frame so that time of data is accurate.
