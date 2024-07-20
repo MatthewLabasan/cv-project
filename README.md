@@ -112,7 +112,7 @@ _@dangabrielle Setting up_
 
 <img alt="Some errors: no git?!? >_< + slow download speeds..." src="assets/errors.JPG" width="1008" height="736">
 
-_No git + slow download speeds = >_<_
+_No git + slow download speeds = </3_
 
 <img alt="The beach + our workstation" src="assets/site.jpg" width="1008" height="736">
 
