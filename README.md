@@ -17,6 +17,7 @@ This project was developed to automate the recording of data recieved by the ARL
 # Getting Started
 ## Prerequisites
 - [Python](https://www.python.org/) v3.8 through v3.11, [pip](https://pip.pypa.io/en/stable/installation/)
+    - If you would like to use a newer version of Python, update the requirement.txt file to use the module versions that work with newer Python versions.
 - [Tesseract](https://tesseract-ocr.github.io/tessdoc/Installation.html)
     - Install tesseract using your device's dependency manager (brew, etc) or manually install.
     - After installation, set ensure it is accessible in your Path:
